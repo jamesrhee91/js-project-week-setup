@@ -1,24 +1,32 @@
-body {
-   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-   font-weight: 300;
-   line-height: 1.6em;
-   font-size: 1.3em;
+* {
+  box-sizing: border-box;
 }
 
-input {
-  font-size: 1.5em;
+#main {
+  width: 400px;
+  height: 600px;
+  margin: auto;
+  overflow-y: hidden;
+  border: solid black 1px;
 }
 
-.container {
-  width: 960px;
-  margin:auto;
-  margin-top:50px;
+#game-wrapper {
+  transition: 200ms all ease-in-out;
 }
 
-ul {
-  padding-left: 20px;
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.delete-note-link {
-  color:red;
+.block {
+  background: white;
+  color: white;
+  text-align: center;
+  height: 150px;
+  border: solid black 1px;
+}
+
+.selected {
+  background: black;
 }
